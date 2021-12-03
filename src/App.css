@@ -1,2 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+
 .App {
+    font-family: "Inter", sans-serif;
+    margin: 0 auto;
+    max-width: 550px;
+}
+
+.app-header {
+    align-items: center;
+    background: #f55a5a;
+    color: #fff;
+    display: flex;
+    font-size: 17.5px;
+    font-weight: 500;
+    gap: 8px;
+    justify-content: center;
+    padding: 16px;
+}
+
+.app-header img {
+    height: 24px;
+    width: 24px;
+}
+
+.travel-list {
+    list-style: none;
+    margin: 0;
+    padding: 20px 40px;
+}
+
+.travel-item {
+    display: grid;
+    gap: 16px;
+    grid-template-columns: 125px auto;
+    padding: 18px 0;
+}
+
+.travel-item:not(:last-of-type) {
+    border-bottom: 1px solid #f5f5f5;
+}
+
+.travel-item figure {
+    height: 168px;
+    margin: 0;
+}
+
+.travel-item figure img {
+    border-radius: 5px;
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+
+.details {
+    color: #2B283A;
+    font-size: 10.24px;
+    padding: 18px 0;
+}
+
+.details p {
+    line-height: 150%;
+    margin: 16px 0 0 0;
+}
+
+.details .country {
+    align-items: center;
+    display: flex;
+    gap: 8px;
+    line-height: 12px;
+}
+
+.details .country img {
+    width: 7px;
+}
+
+.details .country span {
+    letter-spacing: 0.17em;
+    text-transform: uppercase;
+}
+
+.details a {
+    color: #918E9B;
+    margin-left: 8px;
+}
+
+.place {
+    color: #2B283A;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 30px;
+    margin: 8px 0 16px;
+}
+
+.dates {
+    font-weight: 700;
+    line-height: 12px;
 }
